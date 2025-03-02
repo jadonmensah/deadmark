@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "deadmark",
+    "version": "0.0",
+    "description": "temporary",
+    "permissions": [
+        "bookmarks",
+        "tabs",
+        "storage",
+        "alarms"
+    ],
+    "browser_action": {
+        "default_icon": "icons/favicon-32x32.png",
+        "default_title": "deadmark",
+        "default_popup": "popup/deadmark.html"
+    },
+
+    "background": {
+        "scripts": ["background_deadmark.js"],
+        "persistent": true,
+        "type": "module"
+    }
+
+    
+}
